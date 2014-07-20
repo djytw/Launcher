@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="150dp"
+	android:layout_height="150dp"
+	android:orientation="vertical"
+	android:background="@drawable/background">
+
+	<LinearLayout
+		android:layout_height="75dp"
+		android:layout_width="150dp"
+		android:orientation="horizontal">
+
+		<LinearLayout
+			android:layout_height="75dp"
+			android:layout_width="75dp"
+			android:orientation="vertical"
+			android:background="@drawable/background"
+			android:gravity="center"
+			>
+
+			<TextView
+				android:layout_height="50dp"
+				android:text=""
+				android:layout_width="50dp"
+				android:gravity="center"
+				android:textSize="45sp"
+				android:textColor="#FFFFFF"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="75dp"
+			android:layout_width="75dp"
+			android:orientation="vertical"
+			android:background="@drawable/background"
+			android:gravity="center"
+		>
+
+			<TextView
+				android:layout_height="50dp"
+				android:text=""
+				android:layout_width="50dp"
+				android:gravity="center"
+				android:textSize="45sp"
+				android:textColor="#FFFFFF"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="75dp"
+		android:layout_width="150dp"
+		android:orientation="horizontal">
+
+		<LinearLayout
+			android:layout_height="75dp"
+			android:layout_width="75dp"
+			android:orientation="vertical"
+			android:background="@drawable/background"
+			android:gravity="center"
+		>
+
+			<TextView
+				android:layout_height="50dp"
+				android:text=""
+				android:layout_width="50dp"
+				android:gravity="center"
+				android:textSize="45sp"
+				android:textColor="#FFFFFF"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="75dp"
+			android:layout_width="75dp"
+			android:orientation="vertical"
+			android:gravity="center"
+			android:background="@drawable/background">
+
+			<TextView
+				android:layout_height="50dp"
+				android:text=""
+				android:layout_width="50dp"
+				android:gravity="center"
+				android:textSize="45sp"
+				android:textColor="#FFFFFF"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

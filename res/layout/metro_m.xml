@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="150dp"
+	android:layout_width="150dp"
+	android:padding="5dp"
+	android:longClickable="true"
+	android:background="@drawable/background">
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:padding="2dp"
+		android:gravity="bottom|left">
+
+		<TextView
+			android:layout_height="17dp"
+			android:text="程序"
+			android:maxHeight="17dp"
+			android:gravity="top"
+			android:textSize="13sp"
+			android:layout_width="wrap_content"
+			android:textColor="#FFFFFF"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:gravity="center"
+		android:padding="2dp">
+
+		<TextView
+			android:layout_height="75dp"
+			android:text=""
+			android:layout_width="75dp"
+			android:gravity="center"
+			android:textSize="65sp"
+			android:textColor="#FFFFFF"/>
+
+	</LinearLayout>
+
+</RelativeLayout>
+

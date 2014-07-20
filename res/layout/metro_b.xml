@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="300dp"
+	android:layout_height="150dp"
+	android:padding="5dp"
+	android:orientation="vertical"
+	android:background="@drawable/background">
+
+	<LinearLayout
+		android:layout_height="150dp"
+		android:layout_width="300dp"
+		android:orientation="vertical"
+		android:gravity="bottom|right">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="通知数量"
+			android:layout_margin="5dp"
+			android:textSize="18sp"
+			android:textColor="#ffffff"
+			android:layout_width="wrap_content"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="150dp"
+		android:layout_width="300dp"
+		android:orientation="vertical"
+		android:gravity="bottom|left">
+
+		<TextView
+			android:layout_height="35dp"
+			android:text=""
+			android:layout_margin="0dp"
+			android:textColor="#ffffff"
+			android:layout_width="35dp"
+			android:textSize="30sp"
+			android:gravity="center"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="150dp"
+		android:layout_width="300dp"
+		android:orientation="vertical">
+
+		<TextView
+			android:layout_height="35dp"
+			android:text="标题"
+			android:layout_width="match_parent"
+			android:textSize="25sp"
+			android:textColor="#FFFFFF"/>
+
+		<TextView
+			android:layout_height="65dp"
+			android:text="内容内容"
+			android:layout_width="match_parent"
+			android:textColor="#FFFFFF"/>
+
+	</LinearLayout>
+
+</RelativeLayout>
+

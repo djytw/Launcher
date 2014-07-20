@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MainActivity">
+
+	<android.support.v4.view.ViewPager
+		android:id="@+id/pager"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+	</android.support.v4.view.ViewPager>
+
+	<LinearLayout
+		android:layout_height="fill_parent"
+		android:background="#000000"
+		android:layout_width="fill_parent"
+		android:orientation="vertical"
+		android:gravity="center"
+		android:id="@+id/Splash">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="djytw桌面"
+			android:layout_width="wrap_content"
+			android:textSize="35sp"
+			android:shadowRadius="10"/>
+
+	</LinearLayout>
+
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:id="@+id/Control"
+		android:visibility="gone"
+		android:onClick="clearalert">
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical"
+			android:background="#aa000000"
+			android:gravity="top">
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:padding="10dp"
+				android:onClick="dummy"
+				android:gravity="center"
+				android:orientation="vertical"
+				android:background="#0088CC">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="left">
+
+					<LinearLayout
+						android:layout_height="wrap_content"
+						android:layout_width="46dp"
+						android:orientation="vertical"
+						android:background="#00CCFF"
+						android:padding="3dp"
+						android:layout_margin="5dp">
+
+						<Button
+							android:layout_height="60dp"
+							android:text="执行"
+							android:onClick="editDatabase"
+							android:layout_width="40dp"
+							android:background="#0088CC"
+							android:textColor="#000000"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:orientation="vertical">
+
+						<TextView
+							android:layout_height="wrap_content"
+							android:text="数据库手动编辑"
+							android:layout_width="match_parent"
+							android:textColor="#000000"
+							android:textSize="21sp"/>
+
+						<EditText
+							android:layout_height="wrap_content"
+							android:inputType="textMultiLine"
+							android:ems="10"
+							android:layout_width="match_parent"
+							android:id="@+id/control_edit"
+							android:typeface="monospace"
+							android:textColor="#000000"
+							android:background="#0099DD"
+							android:hint="在这里输入SQL语句"/>
+
+						<TextView
+							android:layout_height="wrap_content"
+							android:text=""
+							android:id="@+id/control_console"
+							android:layout_width="match_parent"
+							android:textColor="#000000"
+							android:typeface="monospace"/>
+
+					</LinearLayout>
+
+				</LinearLayout>
+			
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="horizontal"
+			android:gravity="left|bottom">
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:onClick="toggleNight"
+				android:text="切换夜间/白天"
+				android:background="#00000000"/>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:onClick="clearalert"
+		android:gravity="bottom"
+		android:background="#aa000000"
+		android:visibility="gone"
+		android:id="@+id/listcontrol">
+
+		<LinearLayout
+			android:layout_height="100dp"
+			android:onClick="dummy"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:background="#0088CC"
+			android:padding="10dp">
+			<LinearLayout
+				android:layout_height="80dp"
+				android:layout_width="60dp"
+				android:orientation="vertical"
+				android:gravity="center"
+				android:onClick="addToMetro">
+
+				<TextView
+					android:layout_height="40dp"
+					android:text="+"
+					android:layout_width="40dp"
+					android:textSize="35sp"
+					android:textColor="#FFFFFF"
+					android:gravity="center"/>
+
+				<TextView
+					android:layout_height="40dp"
+					android:text="添加到开始菜单"
+					android:layout_width="match_parent"
+					android:gravity="center"/>
+
+			</LinearLayout>
+		
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:gravity="bottom"
+		android:onClick="clearalert"
+		android:visibility="gone"
+		android:background="#aa000000"
+		android:id="@+id/metrocontrol">
+
+		<LinearLayout
+			android:layout_height="100dp"
+			android:onClick="dummy"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:background="#0088CC"
+			android:padding="20dp">
+
+			<LinearLayout
+				android:layout_height="60dp"
+				android:layout_width="60dp"
+				android:orientation="vertical"
+				android:onClick="metroforward"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="40dp"
+					android:text="←"
+					android:layout_width="40dp"
+					android:textSize="35sp"
+					android:textColor="#FFFFFF"
+					android:gravity="center"/>
+
+				<TextView
+					android:layout_height="20dp"
+					android:text="向前移动"
+					android:layout_width="match_parent"
+					android:gravity="center"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="60dp"
+				android:layout_width="60dp"
+				android:orientation="vertical"
+				android:onClick="metrobackward"
+				android:gravity="center"
+				android:layout_marginLeft="5dp">
+
+				<TextView
+					android:layout_height="40dp"
+					android:text="→"
+					android:layout_width="40dp"
+					android:textSize="35sp"
+					android:textColor="#FFFFFF"
+					android:gravity="center"/>
+
+				<TextView
+					android:layout_height="20dp"
+					android:text="向后移动"
+					android:layout_width="match_parent"
+					android:gravity="center"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="60dp"
+				android:layout_width="60dp"
+				android:orientation="vertical"
+				android:gravity="center"
+				android:onClick="metroin"
+				android:layout_marginLeft="5dp">
+
+				<TextView
+					android:layout_height="40dp"
+					android:text="+"
+					android:layout_width="40dp"
+					android:textSize="35sp"
+					android:textColor="#FFFFFF"
+					android:gravity="center"/>
+
+				<TextView
+					android:layout_height="20dp"
+					android:text="放大"
+					android:layout_width="match_parent"
+					android:gravity="center"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="60dp"
+				android:layout_width="60dp"
+				android:orientation="vertical"
+				android:onClick="metroout"
+				android:gravity="center"
+				android:layout_marginLeft="5dp">
+
+				<TextView
+					android:layout_height="40dp"
+					android:text="-"
+					android:layout_width="40dp"
+					android:textSize="35sp"
+					android:textColor="#FFFFFF"
+					android:gravity="center"/>
+
+				<TextView
+					android:layout_height="20dp"
+					android:text="缩小"
+					android:layout_width="match_parent"
+					android:gravity="center"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="60dp"
+				android:layout_width="60dp"
+				android:orientation="vertical"
+				android:gravity="center"
+				android:onClick="metrodelete"
+				android:layout_marginLeft="5dp">
+
+				<TextView
+					android:layout_height="40dp"
+					android:text="×"
+					android:layout_width="40dp"
+					android:textSize="35sp"
+					android:textColor="#FFFFFF"
+					android:gravity="center"/>
+
+				<TextView
+					android:layout_height="20dp"
+					android:text="删除"
+					android:layout_width="match_parent"
+					android:gravity="center"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:background="#aa000000"
+		android:id="@+id/Night"
+		android:visibility="gone"/>
+	
+</RelativeLayout>
+
